@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MichalGoly/EmberFaces.svg?branch=travis)](https://travis-ci.org/MichalGoly/EmberFaces)
+
 # ember-faces
 
 This README outlines the details of collaborating on this Ember application.
