@@ -8,11 +8,11 @@ addons:
   sonarcloud:
     organization: emberfaces
     token:
-      secure: 4ec006b10d1a586d9b42184d90c71e711278e3f0
+      secure: 
     branches:
-      - master
-      - develop
-      - sonarqube  
+    - master
+    - develop
+    - sonarqube
 script:
 - sonar-scanner
 cache:
@@ -20,11 +20,9 @@ cache:
   - "$HOME/.npm"
 before_install:
 - npm config set spin false
-
 before_script:
-  - npm install -g bower
-  - bower install
-
+- npm install -g bower
+- bower install
 env:
   global:
-    secure: XCzEw3rdYIfFDFVWfgvytaLUBCVauXQt2ysJ2hCuOJKLlpJA2knEqvP8aPK+tk7tubCWOy6ZIFZsjTwuJ5gczilCklKeD41oF70acGo1Xs6Ld2MXpiEr9MP5SwL/I/tc69NNBPRbEcchtifFE0meNBSsPqRZWLWwR/gjt3Z1w9pg0mC2PUC7DpkzJuDuimU1DiNVaic4AfnLxKUOHzH6tAU43ligMm761MButKpa19jHki/cJJc78yaX2LWBk71e5onRVpA8XgHmFPzBuLmDAokK3ZUY2QH4xRArc1Ryqp4wiL1B1RwYZ3VtdYpG0trLXhnpIjcpmoiTGz0TLL4w8WXY6f8pPc27+DpUL6PbLMoyLPWUH3cmkhHVcl8jNK7BV9dTm9InCVfWoOeMCpWg1ZUvB81rSnxOO5RYXHCBgsR+wlqLjxQ0iX+Gdc/MS+NswqDlmdKQwelU+6Ki+IfoGSV45YQGqm5pewcjsHfxmC1gsYKfQxRFsav1r7nzWkuCDHEvXe9XkV2fJRWMYwFzyOFe6KBSjJcz4CcAJ5XhWeBTN27hGFZoC4QuW/2eXCj7ADhJwHYx6Vt6jpsbRewPYKA+MiKjCQAUNHgEYDpS0lpKKS5YL8/bS4QooFz3ecpCtgI1IlpLKuKUUZbDbHwMh+i//dO/LmVH4phiXr4d2eM=
+    secure: He3eaAtpb/VDPIO6QR3isdwwGmOd0neayr0yxRFdMiMRdLR22dDSNDdg3ZyXDaUbyh8OAlHPrrMTf8NJoZL0YF9RK2cinvGnswYM97Rfdo+tl4jxpXlTJzFeciuI82PxvnkJ8Klp+6FalPoFit9PCLwpjds0DsFQDkqydg5b2YwmO/Gnw9HHzs3/iAhxJkipJotb+BFIt9irvI5N3RMpz6yfr/Y3vUarScWz4VCM8KGUPj8WJxw23/edjwKyz04DRcKq3KdjDROUDQdTfA3NHeIe32rJGE2VHRciuyEFtwzdFu2h+1O+DsVmqHqVRFZZ5DV3WcBZbFVjHydjWDxWQfATaBb4HAE3UPIzBZpun6toN3n/KnawLlxVTzqoeIqcsfGDvnwmBFtsEz57d30n51QdF5pWG/7YXC5yP4Hnewel96VA4+6AvDaoEBm/LkAO42jJY1Thzh7nSyHkINz45bqdJ0G7smbW+De7LvuUzjzzxlAvLCxM/7Uz3Lbty/7fjuahLNyg18sddEGUEVp0F9zWaEU6C/wdV9XiNIxfR07jeoefdPjwMp4p47yM7iILR6VxOwLoVaxWvKBuUQgds6X94Rbd49Z/fGg4vbggMVr9MEpQj1s0BjeyIKjjLrDT5K1coeWHHamC+3cK4+HpSVVNH19L9Pey9mxaDkKt0MU=
