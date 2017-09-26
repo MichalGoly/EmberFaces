@@ -8,7 +8,7 @@ addons:
   sonarcloud:
     organization: emberfaces
     token:
-      secure: XCzEw3rdYIfFDFVWfgvytaLUBCVauXQt2ysJ2hCuOJKLlpJA2knEqvP8aPK+tk7tubCWOy6ZIFZsjTwuJ5gczilCklKeD41oF70acGo1Xs6Ld2MXpiEr9MP5SwL/I/tc69NNBPRbEcchtifFE0meNBSsPqRZWLWwR/gjt3Z1w9pg0mC2PUC7DpkzJuDuimU1DiNVaic4AfnLxKUOHzH6tAU43ligMm761MButKpa19jHki/cJJc78yaX2LWBk71e5onRVpA8XgHmFPzBuLmDAokK3ZUY2QH4xRArc1Ryqp4wiL1B1RwYZ3VtdYpG0trLXhnpIjcpmoiTGz0TLL4w8WXY6f8pPc27+DpUL6PbLMoyLPWUH3cmkhHVcl8jNK7BV9dTm9InCVfWoOeMCpWg1ZUvB81rSnxOO5RYXHCBgsR+wlqLjxQ0iX+Gdc/MS+NswqDlmdKQwelU+6Ki+IfoGSV45YQGqm5pewcjsHfxmC1gsYKfQxRFsav1r7nzWkuCDHEvXe9XkV2fJRWMYwFzyOFe6KBSjJcz4CcAJ5XhWeBTN27hGFZoC4QuW/2eXCj7ADhJwHYx6Vt6jpsbRewPYKA+MiKjCQAUNHgEYDpS0lpKKS5YL8/bS4QooFz3ecpCtgI1IlpLKuKUUZbDbHwMh+i//dO/LmVH4phiXr4d2eM=
+      secure: 4ec006b10d1a586d9b42184d90c71e711278e3f0
     branches:
       - master
       - develop
