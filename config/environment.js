@@ -4,6 +4,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-faces',
+    podModulePrefix: 'ember-faces/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
