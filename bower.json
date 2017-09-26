@@ -1,0 +1,6 @@
+{
+  "name": "ember-faces",
+  "dependencies": {
+    "materialize": "0.97.6"
+  }
+}
