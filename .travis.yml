@@ -1,21 +1,30 @@
----
 language: node_js
 node_js:
-  - "6"
-
+- '6'
 sudo: false
 dist: trusty
-
 addons:
   chrome: stable
-
+  sonarcloud:
+    organization: emberfaces
+    token:
+      secure: 
+script:
+- sonar-scanner
+notifications:
+    email: false
 cache:
   directories:
-    - $HOME/.npm
-
+  - "$HOME/.npm"
 before_install:
-  - npm config set spin false
-
+- npm config set spin false
 before_script:
-  - npm install -g bower
-  - bower install
+- npm install -g bower
+- bower install
+env:
+  global:
+    secure: He3eaAtpb/VDPIO6QR3isdwwGmOd0neayr0yxRFdMiMRdLR22dDSNDdg3ZyXDaUbyh8OAlHPrrMTf8NJoZL0YF9RK2cinvGnswYM97Rfdo+tl4jxpXlTJzFeciuI82PxvnkJ8Klp+6FalPoFit9PCLwpjds0DsFQDkqydg5b2YwmO/Gnw9HHzs3/iAhxJkipJotb+BFIt9irvI5N3RMpz6yfr/Y3vUarScWz4VCM8KGUPj8WJxw23/edjwKyz04DRcKq3KdjDROUDQdTfA3NHeIe32rJGE2VHRciuyEFtwzdFu2h+1O+DsVmqHqVRFZZ5DV3WcBZbFVjHydjWDxWQfATaBb4HAE3UPIzBZpun6toN3n/KnawLlxVTzqoeIqcsfGDvnwmBFtsEz57d30n51QdF5pWG/7YXC5yP4Hnewel96VA4+6AvDaoEBm/LkAO42jJY1Thzh7nSyHkINz45bqdJ0G7smbW+De7LvuUzjzzxlAvLCxM/7Uz3Lbty/7fjuahLNyg18sddEGUEVp0F9zWaEU6C/wdV9XiNIxfR07jeoefdPjwMp4p47yM7iILR6VxOwLoVaxWvKBuUQgds6X94Rbd49Z/fGg4vbggMVr9MEpQj1s0BjeyIKjjLrDT5K1coeWHHamC+3cK4+HpSVVNH19L9Pey9mxaDkKt0MU=    
+branches:
+  only: 
+    - master
+    - develop
