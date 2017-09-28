@@ -12,8 +12,8 @@ export default Ember.Component.extend({
     };
   }),
   actions: {
-    onUploadComplete: () => {
-      console.log("Michal is the King of Poland");
+    onUploadComplete: (file) => {
+      console.log("Michal is the King of Poland", file);
     }
   }
 });
