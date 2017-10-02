@@ -1,5 +1,9 @@
-// Fix for Roboto font path
-$roboto-font-path: '../assets/';
-
-// Materialize styles
 @import "materialize";
+@import 'components/color';
+@import 'components/variables';
+@import 'ember-cli-materialize';
+
+
+// Our Imports 
+
+// @import '../pods/components/upload-screen/style';
