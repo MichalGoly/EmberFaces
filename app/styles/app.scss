@@ -4,6 +4,8 @@
 @import 'ember-cli-materialize';
 
 
-// Our Imports 
+// Our Imports
 
-// @import '../pods/components/upload-screen/style';
+@import 'app/pods/components/upload-screen/style';
+@import 'app/pods/index/style';
+@import 'app/pods/components/clean-upload/style';

@@ -1,0 +1,32 @@
+<div class="center-align">
+
+  <div class="row">
+    <div class="padding-image">
+      <img class="circle responsive-img" src= {{imageSrc}} />
+    </div>
+  </div>
+
+  <div class="row">
+    {{#if upload-Complete}}
+      <!-- When File is uploaded -->
+      <button class="waves-effect waves-light btn"><i class="material-icons left"/> Submit </button>
+      <button class="waves-effect waves-light btn"><i class="material-icons left"/> Cancel </button>
+    {{else}}
+      <!-- File uploader -->
+      <div class="col s9">
+      <form action="#">
+        <div class="file-field input-field">
+          <div class="btn">
+            <span>Upload</span>
+            <input type="file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
+        </div>
+      </form>
+    </div>
+    {{/if}}
+  </div>
+</div>
+<!-- End of centre element -->
