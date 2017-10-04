@@ -6,27 +6,20 @@
     </div>
   </div>
 
+
+
+
   <div class="row">
-    {{#if upload-Complete}}
-      <!-- When File is uploaded -->
-      <button class="waves-effect waves-light btn"><i class="material-icons left"/> Submit </button>
-      <button class="waves-effect waves-light btn"><i class="material-icons left"/> Cancel </button>
-    {{else}}
-      <!-- File uploader -->
-      <div class="col s9">
-      <form action="#">
-        <div class="file-field input-field">
-          <div class="btn">
-            <span>Upload</span>
-            <input type="file">
-          </div>
-          <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
-          </div>
+    <form {{action 'upload' on='submit'}}>
+      <div class='col s12 m6'>
+        <div class="form-group">
+        <input type="file" name="file" id="file" class="inputfile" action="upload" value="" defaultPrevented='false'>
+        <label for="file" class="waves-effect waves-light btn form-control"><i class="material-icons left"/> Upload</label>
         </div>
-      </form>
-    </div>
-    {{/if}}
+      </div>
+      <div class='col s12 m6'>
+        <button type='submit' class="waves-effect waves-light btn"><i class="material-icons left"/> Submit </button>
+      </div>
+    </form>
   </div>
 </div>
-<!-- End of centre element -->

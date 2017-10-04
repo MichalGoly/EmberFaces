@@ -16,9 +16,13 @@ export default Ember.Component.extend({
 
     //file upload action change to preview upload image before sending it,
 
-    upload: (newImageUrl) => {
-      this.set('imageSrc', newImageUrl);
+    upload: () => {
+      // this.set('imageSrc', );
       console.log('Image Uploaded');
+    },
+
+    test: function() {
+      console.log("HELLO WORLD!");
     }
   }
 
