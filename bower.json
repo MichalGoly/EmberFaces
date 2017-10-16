@@ -1,6 +1,7 @@
 {
   "name": "ember-faces",
   "dependencies": {
-    "materialize": "0.97.6"
+    "materialize": "0.97.6",
+    "ember-uploader": "^1.2.3"
   }
 }

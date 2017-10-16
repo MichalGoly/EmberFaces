@@ -5,21 +5,17 @@
       <img class="circle responsive-img" src= {{imageSrc}} />
     </div>
   </div>
-
-
-
-
+</div>
   <div class="row">
     <form {{action 'upload' on='submit'}}>
-      <div class='col s12 m6'>
+      <div class='col m3 offset-m4'>
         <div class="form-group">
         <input type="file" name="file" id="file" class="inputfile" action="upload" value="" defaultPrevented='false'>
         <label for="file" class="waves-effect waves-light btn form-control"><i class="material-icons left"/> Upload</label>
         </div>
       </div>
-      <div class='col s12 m6'>
+      <div class='col m3 '>
         <button type='submit' class="waves-effect waves-light btn"><i class="material-icons left"/> Submit </button>
       </div>
     </form>
   </div>
-</div>
