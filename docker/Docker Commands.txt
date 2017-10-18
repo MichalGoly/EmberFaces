@@ -1,0 +1,1 @@
+docker run --name ember-nginx -p 80:80 -v /home/richard/git/EmberFaces/ui/dist:/usr/share/nginx/html -d ember

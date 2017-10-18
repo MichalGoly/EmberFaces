@@ -1,0 +1,14 @@
+{
+  "name": "image-service",
+  "version": "1.0.0",
+  "description": "A service to handle Images for ember faces",
+  "main": " index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Price-Jones",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

@@ -1,0 +1,14 @@
+version: '2'
+services: 
+  web:
+    image: ember
+    hostname: ember
+    volumes:
+      - "../ui/dist:/usr/share/nginx/html:ro"
+    ports:
+      - "80:80"
+  service:
+    image: richjones95/upload-service
+    hostname: service
+    ports:
+     - "3000:3000"

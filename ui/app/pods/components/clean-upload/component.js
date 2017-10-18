@@ -12,7 +12,7 @@ export default Ember.Component.extend({
     // Do a Ajax Post
     Ember.$.ajax({
       type: 'POST',
-      url: '/test_server',
+      url: '/upload',
       data: fd,
       processData: false,
       contentType: false,
@@ -31,11 +31,11 @@ export default Ember.Component.extend({
 
       let reader =  new FileReader();
 
-      console.log(file instanceof Blob);
+      
 
       if(file){
-        
-       this.uploadData(file);
+        console.log(file instanceof Blob);
+        this.uploadData(file);
 
         }
       }
