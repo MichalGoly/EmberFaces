@@ -12,7 +12,7 @@ export default Ember.Component.extend({
     // Do a Ajax Post
     Ember.$.ajax({
       type: 'POST',
-      url: '/upload.php',
+      url: '/test_server',
       data: fd,
       processData: false,
       contentType: false,
